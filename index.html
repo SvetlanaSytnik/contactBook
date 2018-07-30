@@ -1,0 +1,922 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700" rel="stylesheet">
+	<link rel="stylesheet" href="assets/styles/main.css">
+	<title>Contact Book</title>
+</head>
+<body>
+	<div class="wrapper">
+		<aside class="sidebar" id="mySidebar">
+			<div class="sidebar-box">
+				<h1 class="sidebar-title">
+					Contact Book
+				</h1>
+				<button class="delete" onclick="closeSidebar()">&#10006;</button>
+				<div class="user">
+					<div class="user-box">
+						<div class="user-pic"></div>
+						<div class="user-desc">
+							<h2 class="user-desc-name">
+								Warhol Andy
+							</h2>
+							<button class="user-logout">
+								Log out
+							</button>
+						</div>
+					</div>
+					<button class="user-button"></button>
+				</div>
+				<form class="search-form">
+					<input type="text" class="search" placeholder="Search a contact">
+					<button class="search-button"></button>
+				</form>
+				<ul class="sidebar-list">
+					<span class="sidebar-list-name">
+							Categories
+					</span>
+					<li class="sidebar-items">
+						<a href="" class="sidebar-links">
+							All Contacts
+						</a>
+						<button class="user-button"></button>
+					</li>
+					<li class="sidebar-items">
+						<a href="" class="sidebar-links">
+							Family
+						</a>
+						<button class="user-button"></button>
+					</li>
+					<li class="sidebar-items">
+						<a href="" class="sidebar-links">
+							Job
+						</a>
+						<button class="user-button"></button>
+					</li>
+					<li class="sidebar-items">
+						<a href="" class="sidebar-links">
+							Fitness
+						</a>
+						<button class="user-button"></button>
+					</li>
+				</ul>
+			</div>
+			<div class="bday">
+				<h3 class="bday-title">
+					Coming Birthday
+				</h3>
+				<div class="bday-list">	
+					<p class="bday-name-date">
+						Ann Smith - <span class="date">15.08.1990</span>
+					</p>
+					<p class="bday-name-date">
+						Ann Smith - <span class="date">15.08.1990</span>
+					</p>
+					<p class="bday-name-date">
+						Ann Smith - <span class="date">15.08.1990</span>
+					</p>
+					<p class="bday-name-date">
+						Ann Smith - <span class="date">15.08.1990</span>
+					</p>
+					<p class="bday-name-date">
+						Ann Smith - <span class="date">15.08.1990</span>
+					</p>
+					<p class="bday-name-date">
+						Ann Smith - <span class="date">15.08.1990</span>
+					</p>
+					<p class="bday-name-date">
+						Ann Smith - <span class="date">15.08.1990</span>
+					</p>
+					<p class="bday-name-date">
+						Ann Smith - <span class="date">15.08.1990</span>
+					</p>
+				</div>
+			</div>
+			<div class="new-contact">
+				<a href="#" target="blanc" class="new-contact-link">
+					 New Contact
+				</a>
+			</div>	
+		</aside>
+		<header class="header-box">
+				<button class="burger-menu" onclick="openSidebar()">
+					<img src="assets/img/menu.svg" alt="menu">
+				</button>
+				<h1 class="header-box-title">All Contacts</h1>
+				<button class="user-button"></button>
+		</header>
+		<section class="contacts">
+			<ul class="contacts-list grid-container">
+				<li class="contacts-item">
+					<div class="user">
+						<div class="user-box">
+							<div class="user-pic"></div>
+							<div class="user-desc">
+								<h2 class="user-desc-name">
+									Warhol Andy Warhol Andy
+								</h2>
+								<p class="user-desc-text">
+									Some text here Some text here
+								</p>
+							</div>
+						</div>
+						<div class="user-dropdown">
+							<button class="user-button"></button>
+							<ul class="user-dropdown-list">
+								<li class="user-dropdown-item">
+									<a href="" class="user-dropdown-link">
+										Edit Contact
+									</a>
+								</li>
+								<li class="user-dropdown-item">
+									<a href="" class="user-dropdown-link">
+										Delete
+									</a>
+								</li>
+								<li class="user-dropdown-item">
+									<a href="" class="user-dropdown-link">
+										Create Group
+									</a>
+								</li>
+								<li class="user-dropdown-item">
+									<a href="" class="user-dropdown-link">
+										Add to group >>
+									</a>
+									<ul class="user-dropdown-list sublist">
+										<li class="user-dropdown-item subitem">
+											<a href="" class="user-dropdown-link sublink">
+												Family
+											</a>
+										</li>
+										<li class="user-dropdown-item subitem">
+											<a href="" class="user-dropdown-link sublink">
+												Job
+											</a>
+										</li>
+										<li class="user-dropdown-item subitem">
+											<a href="" class="user-dropdown-link">
+												Fitness
+											</a>
+										</li>
+									</ul>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</li>
+				<li class="contacts-item">
+					<div class="user">
+						<div class="user-box">
+							<div class="user-pic"></div>
+							<div class="user-desc">
+								<h2 class="user-desc-name">
+									Warhol Andy Warhol Andy
+								</h2>
+								<p class="user-desc-text">
+									Some text here Some text here
+								</p>
+							</div>
+						</div>
+						<div class="user-dropdown">
+							<button class="user-button"></button>
+							<ul class="user-dropdown-list">
+								<li class="user-dropdown-item">
+									<a href="" class="user-dropdown-link">
+										Edit Contact
+									</a>
+								</li>
+								<li class="user-dropdown-item">
+									<a href="" class="user-dropdown-link">
+										Delete
+									</a>
+								</li>
+								<li class="user-dropdown-item">
+									<a href="" class="user-dropdown-link">
+										Create Group
+									</a>
+								</li>
+								<li class="user-dropdown-item">
+									<a href="" class="user-dropdown-link">
+										Add to group >>
+									</a>
+									<ul class="user-dropdown-list sublist">
+										<li class="user-dropdown-item subitem">
+											<a href="" class="user-dropdown-link sublink">
+												Family
+											</a>
+										</li>
+										<li class="user-dropdown-item subitem">
+											<a href="" class="user-dropdown-link sublink">
+												Job
+											</a>
+										</li>
+										<li class="user-dropdown-item subitem">
+											<a href="" class="user-dropdown-link">
+												Fitness
+											</a>
+										</li>
+									</ul>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</li>
+				<li class="contacts-item">
+					<div class="user">
+						<div class="user-box">
+							<div class="user-pic"></div>
+							<div class="user-desc">
+								<h2 class="user-desc-name">
+									Warhol Andy Warhol Andy
+								</h2>
+								<p class="user-desc-text">
+									Some text here Some text here
+								</p>
+							</div>
+						</div>
+						<div class="user-dropdown">
+							<button class="user-button"></button>
+							<ul class="user-dropdown-list">
+								<li class="user-dropdown-item">
+									<a href="" class="user-dropdown-link">
+										Edit Contact
+									</a>
+								</li>
+								<li class="user-dropdown-item">
+									<a href="" class="user-dropdown-link">
+										Delete
+									</a>
+								</li>
+								<li class="user-dropdown-item">
+									<a href="" class="user-dropdown-link">
+										Create Group
+									</a>
+								</li>
+								<li class="user-dropdown-item">
+									<a href="" class="user-dropdown-link">
+										Add to group >>
+									</a>
+									<ul class="user-dropdown-list sublist">
+										<li class="user-dropdown-item subitem">
+											<a href="" class="user-dropdown-link sublink">
+												Family
+											</a>
+										</li>
+										<li class="user-dropdown-item subitem">
+											<a href="" class="user-dropdown-link sublink">
+												Job
+											</a>
+										</li>
+										<li class="user-dropdown-item subitem">
+											<a href="" class="user-dropdown-link">
+												Fitness
+											</a>
+										</li>
+									</ul>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</li>
+				<li class="contacts-item">
+					<div class="user">
+						<div class="user-box">
+							<div class="user-pic"></div>
+							<div class="user-desc">
+								<h2 class="user-desc-name">
+									Warhol Andy Warhol Andy
+								</h2>
+								<p class="user-desc-text">
+									Some text here Some text here
+								</p>
+							</div>
+						</div>
+						<div class="user-dropdown">
+							<button class="user-button"></button>
+							<ul class="user-dropdown-list">
+								<li class="user-dropdown-item">
+									<a href="" class="user-dropdown-link">
+										Edit Contact
+									</a>
+								</li>
+								<li class="user-dropdown-item">
+									<a href="" class="user-dropdown-link">
+										Delete
+									</a>
+								</li>
+								<li class="user-dropdown-item">
+									<a href="" class="user-dropdown-link">
+										Create Group
+									</a>
+								</li>
+								<li class="user-dropdown-item">
+									<a href="" class="user-dropdown-link">
+										Add to group >>
+									</a>
+									<ul class="user-dropdown-list sublist">
+										<li class="user-dropdown-item subitem">
+											<a href="" class="user-dropdown-link sublink">
+												Family
+											</a>
+										</li>
+										<li class="user-dropdown-item subitem">
+											<a href="" class="user-dropdown-link sublink">
+												Job
+											</a>
+										</li>
+										<li class="user-dropdown-item subitem">
+											<a href="" class="user-dropdown-link">
+												Fitness
+											</a>
+										</li>
+									</ul>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</li>
+				<li class="contacts-item">
+					<div class="user">
+						<div class="user-box">
+							<div class="user-pic"></div>
+							<div class="user-desc">
+								<h2 class="user-desc-name">
+									Warhol Andy Warhol Andy
+								</h2>
+								<p class="user-desc-text">
+									Some text here Some text here
+								</p>
+							</div>
+						</div>
+						<div class="user-dropdown">
+							<button class="user-button"></button>
+							<ul class="user-dropdown-list">
+								<li class="user-dropdown-item">
+									<a href="" class="user-dropdown-link">
+										Edit Contact
+									</a>
+								</li>
+								<li class="user-dropdown-item">
+									<a href="" class="user-dropdown-link">
+										Delete
+									</a>
+								</li>
+								<li class="user-dropdown-item">
+									<a href="" class="user-dropdown-link">
+										Create Group
+									</a>
+								</li>
+								<li class="user-dropdown-item">
+									<a href="" class="user-dropdown-link">
+										Add to group >>
+									</a>
+									<ul class="user-dropdown-list sublist">
+										<li class="user-dropdown-item subitem">
+											<a href="" class="user-dropdown-link sublink">
+												Family
+											</a>
+										</li>
+										<li class="user-dropdown-item subitem">
+											<a href="" class="user-dropdown-link sublink">
+												Job
+											</a>
+										</li>
+										<li class="user-dropdown-item subitem">
+											<a href="" class="user-dropdown-link">
+												Fitness
+											</a>
+										</li>
+									</ul>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</li>
+				<li class="contacts-item">
+					<div class="user">
+						<div class="user-box">
+							<div class="user-pic"></div>
+							<div class="user-desc">
+								<h2 class="user-desc-name">
+									Warhol Andy Warhol Andy
+								</h2>
+								<p class="user-desc-text">
+									Some text here Some text here
+								</p>
+							</div>
+						</div>
+						<div class="user-dropdown">
+							<button class="user-button"></button>
+							<ul class="user-dropdown-list">
+								<li class="user-dropdown-item">
+									<a href="" class="user-dropdown-link">
+										Edit Contact
+									</a>
+								</li>
+								<li class="user-dropdown-item">
+									<a href="" class="user-dropdown-link">
+										Delete
+									</a>
+								</li>
+								<li class="user-dropdown-item">
+									<a href="" class="user-dropdown-link">
+										Create Group
+									</a>
+								</li>
+								<li class="user-dropdown-item">
+									<a href="" class="user-dropdown-link">
+										Add to group >>
+									</a>
+									<ul class="user-dropdown-list sublist">
+										<li class="user-dropdown-item subitem">
+											<a href="" class="user-dropdown-link sublink">
+												Family
+											</a>
+										</li>
+										<li class="user-dropdown-item subitem">
+											<a href="" class="user-dropdown-link sublink">
+												Job
+											</a>
+										</li>
+										<li class="user-dropdown-item subitem">
+											<a href="" class="user-dropdown-link">
+												Fitness
+											</a>
+										</li>
+									</ul>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</li>
+				<li class="contacts-item">
+					<div class="user">
+						<div class="user-box">
+							<div class="user-pic"></div>
+							<div class="user-desc">
+								<h2 class="user-desc-name">
+									Warhol Andy Warhol Andy
+								</h2>
+								<p class="user-desc-text">
+									Some text here Some text here
+								</p>
+							</div>
+						</div>
+						<div class="user-dropdown">
+							<button class="user-button"></button>
+							<ul class="user-dropdown-list">
+								<li class="user-dropdown-item">
+									<a href="" class="user-dropdown-link">
+										Edit Contact
+									</a>
+								</li>
+								<li class="user-dropdown-item">
+									<a href="" class="user-dropdown-link">
+										Delete
+									</a>
+								</li>
+								<li class="user-dropdown-item">
+									<a href="" class="user-dropdown-link">
+										Create Group
+									</a>
+								</li>
+								<li class="user-dropdown-item">
+									<a href="" class="user-dropdown-link">
+										Add to group >>
+									</a>
+									<ul class="user-dropdown-list sublist">
+										<li class="user-dropdown-item subitem">
+											<a href="" class="user-dropdown-link sublink">
+												Family
+											</a>
+										</li>
+										<li class="user-dropdown-item subitem">
+											<a href="" class="user-dropdown-link sublink">
+												Job
+											</a>
+										</li>
+										<li class="user-dropdown-item subitem">
+											<a href="" class="user-dropdown-link">
+												Fitness
+											</a>
+										</li>
+									</ul>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</li>
+				<li class="contacts-item">
+					<div class="user">
+						<div class="user-box">
+							<div class="user-pic"></div>
+							<div class="user-desc">
+								<h2 class="user-desc-name">
+									Warhol Andy Warhol Andy
+								</h2>
+								<p class="user-desc-text">
+									Some text here Some text here
+								</p>
+							</div>
+						</div>
+						<div class="user-dropdown">
+							<button class="user-button"></button>
+							<ul class="user-dropdown-list">
+								<li class="user-dropdown-item">
+									<a href="" class="user-dropdown-link">
+										Edit Contact
+									</a>
+								</li>
+								<li class="user-dropdown-item">
+									<a href="" class="user-dropdown-link">
+										Delete
+									</a>
+								</li>
+								<li class="user-dropdown-item">
+									<a href="" class="user-dropdown-link">
+										Create Group
+									</a>
+								</li>
+								<li class="user-dropdown-item">
+									<a href="" class="user-dropdown-link">
+										Add to group >>
+									</a>
+									<ul class="user-dropdown-list sublist">
+										<li class="user-dropdown-item subitem">
+											<a href="" class="user-dropdown-link sublink">
+												Family
+											</a>
+										</li>
+										<li class="user-dropdown-item subitem">
+											<a href="" class="user-dropdown-link sublink">
+												Job
+											</a>
+										</li>
+										<li class="user-dropdown-item subitem">
+											<a href="" class="user-dropdown-link">
+												Fitness
+											</a>
+										</li>
+									</ul>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</li>
+				<li class="contacts-item">
+					<div class="user">
+						<div class="user-box">
+							<div class="user-pic"></div>
+							<div class="user-desc">
+								<h2 class="user-desc-name">
+									Warhol Andy Warhol Andy
+								</h2>
+								<p class="user-desc-text">
+									Some text here Some text here
+								</p>
+							</div>
+						</div>
+						<div class="user-dropdown">
+							<button class="user-button"></button>
+							<ul class="user-dropdown-list">
+								<li class="user-dropdown-item">
+									<a href="" class="user-dropdown-link">
+										Edit Contact
+									</a>
+								</li>
+								<li class="user-dropdown-item">
+									<a href="" class="user-dropdown-link">
+										Delete
+									</a>
+								</li>
+								<li class="user-dropdown-item">
+									<a href="" class="user-dropdown-link">
+										Create Group
+									</a>
+								</li>
+								<li class="user-dropdown-item">
+									<a href="" class="user-dropdown-link">
+										Add to group >>
+									</a>
+									<ul class="user-dropdown-list sublist">
+										<li class="user-dropdown-item subitem">
+											<a href="" class="user-dropdown-link sublink">
+												Family
+											</a>
+										</li>
+										<li class="user-dropdown-item subitem">
+											<a href="" class="user-dropdown-link sublink">
+												Job
+											</a>
+										</li>
+										<li class="user-dropdown-item subitem">
+											<a href="" class="user-dropdown-link">
+												Fitness
+											</a>
+										</li>
+									</ul>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</li>
+				<li class="contacts-item">
+					<div class="user">
+						<div class="user-box">
+							<div class="user-pic"></div>
+							<div class="user-desc">
+								<h2 class="user-desc-name">
+									Warhol Andy Warhol Andy
+								</h2>
+								<p class="user-desc-text">
+									Some text here Some text here
+								</p>
+							</div>
+						</div>
+						<div class="user-dropdown">
+							<button class="user-button"></button>
+							<ul class="user-dropdown-list">
+								<li class="user-dropdown-item">
+									<a href="" class="user-dropdown-link">
+										Edit Contact
+									</a>
+								</li>
+								<li class="user-dropdown-item">
+									<a href="" class="user-dropdown-link">
+										Delete
+									</a>
+								</li>
+								<li class="user-dropdown-item">
+									<a href="" class="user-dropdown-link">
+										Create Group
+									</a>
+								</li>
+								<li class="user-dropdown-item">
+									<a href="" class="user-dropdown-link">
+										Add to group >>
+									</a>
+									<ul class="user-dropdown-list sublist">
+										<li class="user-dropdown-item subitem">
+											<a href="" class="user-dropdown-link sublink">
+												Family
+											</a>
+										</li>
+										<li class="user-dropdown-item subitem">
+											<a href="" class="user-dropdown-link sublink">
+												Job
+											</a>
+										</li>
+										<li class="user-dropdown-item subitem">
+											<a href="" class="user-dropdown-link">
+												Fitness
+											</a>
+										</li>
+									</ul>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</li>
+				<li class="contacts-item">
+					<div class="user">
+						<div class="user-box">
+							<div class="user-pic"></div>
+							<div class="user-desc">
+								<h2 class="user-desc-name">
+									Warhol Andy Warhol Andy
+								</h2>
+								<p class="user-desc-text">
+									Some text here Some text here
+								</p>
+							</div>
+						</div>
+						<div class="user-dropdown">
+							<button class="user-button"></button>
+							<ul class="user-dropdown-list">
+								<li class="user-dropdown-item">
+									<a href="" class="user-dropdown-link">
+										Edit Contact
+									</a>
+								</li>
+								<li class="user-dropdown-item">
+									<a href="" class="user-dropdown-link">
+										Delete
+									</a>
+								</li>
+								<li class="user-dropdown-item">
+									<a href="" class="user-dropdown-link">
+										Create Group
+									</a>
+								</li>
+								<li class="user-dropdown-item">
+									<a href="" class="user-dropdown-link">
+										Add to group >>
+									</a>
+									<ul class="user-dropdown-list sublist">
+										<li class="user-dropdown-item subitem">
+											<a href="" class="user-dropdown-link sublink">
+												Family
+											</a>
+										</li>
+										<li class="user-dropdown-item subitem">
+											<a href="" class="user-dropdown-link sublink">
+												Job
+											</a>
+										</li>
+										<li class="user-dropdown-item subitem">
+											<a href="" class="user-dropdown-link">
+												Fitness
+											</a>
+										</li>
+									</ul>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</li>
+				<li class="contacts-item">
+					<div class="user">
+						<div class="user-box">
+							<div class="user-pic"></div>
+							<div class="user-desc">
+								<h2 class="user-desc-name">
+									Warhol Andy Warhol Andy
+								</h2>
+								<p class="user-desc-text">
+									Some text here Some text here
+								</p>
+							</div>
+						</div>
+						<div class="user-dropdown">
+							<button class="user-button"></button>
+							<ul class="user-dropdown-list">
+								<li class="user-dropdown-item">
+									<a href="" class="user-dropdown-link">
+										Edit Contact
+									</a>
+								</li>
+								<li class="user-dropdown-item">
+									<a href="" class="user-dropdown-link">
+										Delete
+									</a>
+								</li>
+								<li class="user-dropdown-item">
+									<a href="" class="user-dropdown-link">
+										Create Group
+									</a>
+								</li>
+								<li class="user-dropdown-item">
+									<a href="" class="user-dropdown-link">
+										Add to group >>
+									</a>
+									<ul class="user-dropdown-list sublist">
+										<li class="user-dropdown-item subitem">
+											<a href="" class="user-dropdown-link sublink">
+												Family
+											</a>
+										</li>
+										<li class="user-dropdown-item subitem">
+											<a href="" class="user-dropdown-link sublink">
+												Job
+											</a>
+										</li>
+										<li class="user-dropdown-item subitem">
+											<a href="" class="user-dropdown-link">
+												Fitness
+											</a>
+										</li>
+									</ul>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</li>
+				<li class="contacts-item">
+					<div class="user">
+						<div class="user-box">
+							<div class="user-pic"></div>
+							<div class="user-desc">
+								<h2 class="user-desc-name">
+									Warhol Andy Warhol Andy
+								</h2>
+								<p class="user-desc-text">
+									Some text here Some text here
+								</p>
+							</div>
+						</div>
+						<div class="user-dropdown">
+							<button class="user-button"></button>
+							<ul class="user-dropdown-list">
+								<li class="user-dropdown-item">
+									<a href="" class="user-dropdown-link">
+										Edit Contact
+									</a>
+								</li>
+								<li class="user-dropdown-item">
+									<a href="" class="user-dropdown-link">
+										Delete
+									</a>
+								</li>
+								<li class="user-dropdown-item">
+									<a href="" class="user-dropdown-link">
+										Create Group
+									</a>
+								</li>
+								<li class="user-dropdown-item">
+									<a href="" class="user-dropdown-link">
+										Add to group >>
+									</a>
+									<ul class="user-dropdown-list sublist">
+										<li class="user-dropdown-item subitem">
+											<a href="" class="user-dropdown-link sublink">
+												Family
+											</a>
+										</li>
+										<li class="user-dropdown-item subitem">
+											<a href="" class="user-dropdown-link sublink">
+												Job
+											</a>
+										</li>
+										<li class="user-dropdown-item subitem">
+											<a href="" class="user-dropdown-link">
+												Fitness
+											</a>
+										</li>
+									</ul>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</li>
+				<li class="contacts-item">
+					<div class="user">
+						<div class="user-box">
+							<div class="user-pic"></div>
+							<div class="user-desc">
+								<h2 class="user-desc-name">
+									Warhol Andy Warhol Andy
+								</h2>
+								<p class="user-desc-text">
+									Some text here Some text here
+								</p>
+							</div>
+						</div>
+						<div class="user-dropdown">
+							<button class="user-button"></button>
+							<ul class="user-dropdown-list">
+								<li class="user-dropdown-item">
+									<a href="" class="user-dropdown-link">
+										Edit Contact
+									</a>
+								</li>
+								<li class="user-dropdown-item">
+									<a href="" class="user-dropdown-link">
+										Delete
+									</a>
+								</li>
+								<li class="user-dropdown-item">
+									<a href="" class="user-dropdown-link">
+										Create Group
+									</a>
+								</li>
+								<li class="user-dropdown-item">
+									<a href="" class="user-dropdown-link">
+										Add to group >>
+									</a>
+									<ul class="user-dropdown-list sublist">
+										<li class="user-dropdown-item subitem">
+											<a href="" class="user-dropdown-link sublink">
+												Family
+											</a>
+										</li>
+										<li class="user-dropdown-item subitem">
+											<a href="" class="user-dropdown-link sublink">
+												Job
+											</a>
+										</li>
+										<li class="user-dropdown-item subitem">
+											<a href="" class="user-dropdown-link">
+												Fitness
+											</a>
+										</li>
+									</ul>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</li>
+			</ul>
+		</section>
+	</div>
+	<script type="text/javascript">
+		function openSidebar() {
+		    document.getElementById("mySidebar").style.display = "block";
+		}
+		function closeSidebar() {
+		    document.getElementById("mySidebar").style.display = "none";
+		}
+	</script>
+</body>
+</html>
