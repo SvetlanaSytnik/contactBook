@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700" rel="stylesheet">
+	<link rel="stylesheet" href="assets/styles/main.css">
+	<title>Add Contact</title>
+</head>
+<body>
+	<div class="wrapper">
+		<aside class="sidebar" id="mySidebar">
+			<div class="sidebar-box">
+				<h1 class="sidebar-title">
+					Contact Book
+				</h1>
+				<button class="delete" onclick="closeSidebar()">&#10006;</button>
+				<div class="user">
+					<div class="user-box">
+						<div class="user-pic"></div>
+						<div class="user-desc">
+							<h2 class="user-desc-name">
+								Warhol Andy
+							</h2>
+							<button class="user-logout">
+								Log out
+							</button>
+						</div>
+					</div>
+					<button class="user-button"></button>
+				</div>
+				<form class="search-form">
+					<input type="text" class="search" placeholder="Search a contact">
+					<button class="search-button"></button>
+				</form>
+				<ul class="sidebar-list">
+					<span class="sidebar-list-name">
+							Categories
+					</span>
+					<li class="sidebar-items">
+						<a href="" class="sidebar-links">
+							All Contacts
+						</a>
+						<button class="user-button"></button>
+					</li>
+					<li class="sidebar-items">
+						<a href="" class="sidebar-links">
+							Family
+						</a>
+						<button class="user-button"></button>
+					</li>
+					<li class="sidebar-items">
+						<a href="" class="sidebar-links">
+							Job
+						</a>
+						<button class="user-button"></button>
+					</li>
+					<li class="sidebar-items">
+						<a href="" class="sidebar-links">
+							Fitness
+						</a>
+						<button class="user-button"></button>
+					</li>
+				</ul>
+			</div>
+			<div class="bday">
+				<h3 class="bday-title">
+					Coming Birthday
+				</h3>
+				<div class="bday-list">	
+					<p class="bday-name-date">
+						Ann Smith - <span class="date">15.08.1990</span>
+					</p>
+					<p class="bday-name-date">
+						Ann Smith - <span class="date">15.08.1990</span>
+					</p>
+					<p class="bday-name-date">
+						Ann Smith - <span class="date">15.08.1990</span>
+					</p>
+					<p class="bday-name-date">
+						Ann Smith - <span class="date">15.08.1990</span>
+					</p>
+					<p class="bday-name-date">
+						Ann Smith - <span class="date">15.08.1990</span>
+					</p>
+					<p class="bday-name-date">
+						Ann Smith - <span class="date">15.08.1990</span>
+					</p>
+					<p class="bday-name-date">
+						Ann Smith - <span class="date">15.08.1990</span>
+					</p>
+					<p class="bday-name-date">
+						Ann Smith - <span class="date">15.08.1990</span>
+					</p>
+				</div>
+			</div>
+			<div class="new-contact">
+				<a href="#" target="blanc" class="new-contact-link">
+					 New Contact
+				</a>
+			</div>	
+		</aside>
+		<header class="header-box">
+				<button class="burger-menu" onclick="openSidebar()">
+					<img src="assets/img/menu.svg" alt="menu">
+				</button>
+				<h1 class="header-box-title">Add Contact</h1>
+				<button class="user-button"></button>
+		</header>
+		<section class="add-contact">
+			<button class="circle-delete"></button>
+			<form action="#" method="post" enctype="application/x-www-form-urlencoded" target="_blanc" class="add">
+				<ul class="add-list">
+						<li class="add-item add--file">
+							<label for="fileUpload" class="add-label">
+								<div class="add-photo">
+								</div>
+							</label>
+						</li>
+						<li class="add-item add--name">
+							<label for="" class="add-label">
+								<p class="add-text">Name</p>
+								<input type="text" class="add-input" checked>
+							</label>
+						</li>
+						<li class="add-item add--surname">
+							<label for="" class="add-label">
+								<p class="add-text">Surname</p>
+								<input type="text" class="add-input" checked>
+							</label>
+						</li>
+						<li class="add-item add--desc">
+							<label for="" class="add-label">
+								<p class="add-text">Description</p>
+								<textarea name="" id="desc" cols="30" rows="10" class="add-input"></textarea>
+							</label>
+						</li>
+						<li class="add-item add--phone">
+							<label for="" class="add-label">
+								<span class="add-text">Phone</span>
+								<input type="text" class="add-input" checked>
+							</label>
+						</li>
+						<li class="add-item add--email">
+							<label for="" class="add-label">
+								<span class="add-text">Email</span>
+								<input type="text" class="add-input" checked>
+							</label>
+						</li>
+						<li class="add-item add--birth">
+							<label for="" class="add-label">
+								<p class="add-text">Birthday</p>
+								<input type="text" class="add-input">
+							</label>
+						</li>
+						<li class="add-item add--info">
+							<label for="" class="add-label">
+								<span class="add-text">Information</span>
+								<textarea name="" id="info" cols="30" rows="10" class="add-input"></textarea>
+							</label>
+						</li>
+						<li class="add-item add--inst">
+							<label for="" class="add-label">
+								<span class="add-text">Instagramm</span>
+								<input type="text" class="add-input">
+							</label>
+						</li>
+						<li class="add-item add--fb">
+							<label for="" class="add-label">
+								<span class="add-text">Facebook</span>
+								<input type="text" class="add-input">
+							</label>
+						</li>
+						<li class="add-item add--buttons">
+							<label for="" class="add-label-button">
+								<div class="add-line"></div>
+								<input type="submit" class="add-save" value="Save Changes">
+								<input type="reset" class="add-cancel" value="Cancel">
+							</label>
+						</li>
+					</ul>	
+			</form>
+		</section>
+	</div>
+	<script type="text/javascript" src="assets/scripts/main.js"></script>
+</body>
+</html>
