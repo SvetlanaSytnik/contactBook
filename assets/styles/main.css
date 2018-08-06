@@ -17,8 +17,7 @@ body {
   display: grid;
   grid-template-columns: minmax(375px, 1fr);
   grid-template-rows: repeat(3, auto);
-  grid-template-areas: "sidebar" "header" "main";
-  overflow: hidden; }
+  grid-template-areas: "sidebar" "header" "main"; }
   @media (min-width: 520px) and (max-width: 1023px) {
     .wrapper {
       grid-template-columns: 292px 1fr;
